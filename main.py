@@ -64,7 +64,9 @@ def prime_numbers():
             pass
     if num == 2:
         print(f'Число {num} является простым')
-    elif num == 1 or num != 2 and num % 2 == 0:
+    elif num == 1:
+        print(f'Число {num} не является ни простым, ни составным')
+    elif num != 2 and num % 2 == 0:
         print(f'Число {num} является составным')
     else:
         prime = [2]
